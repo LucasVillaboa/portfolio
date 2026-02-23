@@ -18,6 +18,7 @@ export const projects: Project[] = [
     title: "Spa “Sentirse Bien”",
     shortDescription: "Sistema web con turnos, pagos online y roles diferenciados.",
     longDescription: `
+    
 Desarrollé una plataforma web completa para un spa real.
 
 Incluye:
@@ -30,8 +31,8 @@ Incluye:
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "Spatie Roles"],
     tags: ["Proyecto académico", "Web App", "Laravel", "MySQL"],
     image: "/projects/spa.png",
-    demoUrl: "https://nachecsistema-production.up.railway.app/",
-    codeUrl: "https://github.com/LucasVillaboa/Spa",
+    demoUrl:"https://nachecsistema-production.up.railway.app/",
+    codeUrl:"https://github.com/LucasVillaboa/spaweb",
     device: "desktop",
   },
 
