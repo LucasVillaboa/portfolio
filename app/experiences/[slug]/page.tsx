@@ -57,16 +57,7 @@ export default async function Page({
 
         {/* ---------- LINKS ---------- */}
         <div className="flex gap-4">
-          {project.demoUrl && (
-            <a
-              href={project.demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-5 py-2 rounded-lg bg-black text-white hover:opacity-90"
-            >
-              Ver demo
-            </a>
-          )}
+          
 
           {project.codeUrl && (
             <a
