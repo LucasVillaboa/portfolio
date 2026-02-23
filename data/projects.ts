@@ -30,8 +30,8 @@ Incluye:
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "Spatie Roles"],
     tags: ["Proyecto académico", "Web App", "Laravel", "MySQL"],
     image: "/projects/spa.png",
-    demoUrl: "https://spaweb-production-4091.up.railway.app/",
-    codeUrl: "https://github.com/tuusuario/spa-sentirse-bien",
+    demoUrl: "https://nachecsistema-production.up.railway.app/",
+    codeUrl: "https://github.com/LucasVillaboa/Spa",
     device: "desktop",
   },
 
@@ -54,10 +54,7 @@ Incluye:
     image: "/projects/nachec/cover.png",   // 👈 la que se ve en el inicio
     images: [                              // 👈 las que se verán en el detalle
       "/projects/nachec/cover.png",
-      "/projects/nachec/login.png",
-      "/projects/nachec/dashboard.png",
-      "/projects/nachec/beneficiarios.png",
-      "/projects/nachec/entregas.png",
+    
     ],
     demoUrl: "https://nachecsistema-production.up.railway.app/",
     codeUrl: "https://github.com/LucasVillaboa/nachec.sistema",
@@ -88,8 +85,8 @@ Incluye:
     
   ],
 
-  demoUrl: "",     
-  codeUrl: "",     
+  demoUrl: "https://nachecsistema-production.up.railway.app/",
+    codeUrl: "https://github.com/LucasVillaboa/restaurante",  
 
   device: "desktop", 
 }
