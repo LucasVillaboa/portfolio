@@ -5,10 +5,8 @@ export type Project = {
   longDescription: string;
   tech: string[];
   tags: string[];
-  image: string;            // imagen principal (inicio)
-  images?: string[];        // 👈 GALERÍA (solo detalle)
-  demoUrl: string;
-  codeUrl: string;
+  image: string;
+  codeUrl?: string;
   device: "desktop" | "mobile";
 };
 
@@ -18,7 +16,6 @@ export const projects: Project[] = [
     title: "Spa “Sentirse Bien”",
     shortDescription: "Sistema web con turnos, pagos online y roles diferenciados.",
     longDescription: `
-    
 Desarrollé una plataforma web completa para un spa real.
 
 Incluye:
@@ -29,10 +26,9 @@ Incluye:
 • Reportes por servicio y profesional  
 `,
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "Spatie Roles"],
-    tags: ["Proyecto académico", "Web App", "Laravel", "MySQL"],
+    tags: ["Proyecto académico", "Web App", "Laravel"],
     image: "/projects/spa.png",
-    demoUrl:"https://nachecsistema-production.up.railway.app/",
-    codeUrl:"https://github.com/LucasVillaboa/spaweb",
+    codeUrl: "https://github.com/LucasVillaboa/spaweb",
     device: "desktop",
   },
 
@@ -52,21 +48,16 @@ Incluye:
 `,
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
     tags: ["Sistema gubernamental", "Web App", "Laravel"],
-    image: "/projects/nachec/cover.png",   // 👈 la que se ve en el inicio
-    images: [                              // 👈 las que se verán en el detalle
-      "/projects/nachec/cover.png",
-    
-    ],
-    demoUrl: "https://nachecsistema-production.up.railway.app/",
-    codeUrl: "https://github.com/LucasVillaboa/nachec.sistema",
+    image: "/projects/nachec/cover.png",
+    //codeUrl: "https://github.com/LucasVillaboa/nachec.sistema",
     device: "mobile",
   },
 
-{
-  slug: "restaurante",
-  title: "Sistema de Restaurante",
-  shortDescription: "Sistema de gestión para restaurante.",
-  longDescription: `
+  {
+    slug: "restaurante",
+    title: "Sistema de Restaurante",
+    shortDescription: "Sistema de gestión para restaurante.",
+    longDescription: `
 Sistema web para la gestión integral de un restaurante.
 
 Incluye:
@@ -75,28 +66,13 @@ Incluye:
 • Administración de menú
 • Reportes diarios
 `,
-  tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
-  tags: ["Web App", "Restaurante"],
-
- 
-  image: "/projects/restaurante/cover.png",
-
-  images: [
-    "/projects/restaurante/cover.png",
-    
-  ],
-
-  demoUrl: "https://nachecsistema-production.up.railway.app/",
-    codeUrl: "https://github.com/LucasVillaboa/restaurante",  
-
-  device: "desktop", 
-}
-
-
+    tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    tags: ["Web App", "Restaurante"],
+    image: "/projects/restaurante/cover.png",
+    codeUrl: "https://github.com/LucasVillaboa/restaurante",
+    device: "mobile",
+  },
 ];
-
-
-
 
 
 

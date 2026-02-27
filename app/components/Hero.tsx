@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -53,11 +54,18 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="flex justify-center"
         >
-          <div className="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-br from-blue-500 to-fuchsia-500 rounded-3xl shadow-2xl flex items-center justify-center text-white text-2xl font-semibold animate-float-slower">
-            Tu foto
-          </div>
+<div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+  <Image
+    src="/profile.jpg"
+    alt="Lucas Villaboa"
+    fill
+    priority
+    className="object-cover"
+  />
+</div>
         </motion.div>
       </div>
+
     </section>
   );
 }
