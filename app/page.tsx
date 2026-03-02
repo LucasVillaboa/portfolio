@@ -13,23 +13,25 @@ export default function Home() {
       <Timeline />
 
       {/* ---------- SKILLS ---------- */}
-      <section
-        id="skills"
-        className="max-w-5xl mx-auto py-20 px-6 text-center"
-      >
-        <h2 className="text-3xl font-bold mb-10">Tecnologías</h2>
+   <section
+  id="skills"
+  className="max-w-5xl mx-auto py-20 px-6 text-center"
+>
+  <h2 className="text-3xl font-bold text-slate-900 mb-10">
+    Tecnologías
+  </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-slate-900">
-          <div className="bg-gray-800 p-4 rounded-lg">Laravel</div>
-          <div className="bg-gray-800 p-4 rounded-lg">PHP</div>
-          <div className="bg-gray-800 p-4 rounded-lg">JavaScript</div>
-          <div className="bg-gray-800 p-4 rounded-lg">Next.js</div>
-          <div className="bg-gray-800 p-4 rounded-lg">TypeScript</div>
-          <div className="bg-gray-800 p-4 rounded-lg">MySQL</div>
-          <div className="bg-gray-800 p-4 rounded-lg">Bootstrap</div>
-          <div className="bg-gray-800 p-4 rounded-lg">Tailwind</div>
-        </div>
-      </section>
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div className="bg-gray-800 text-white p-4 rounded-lg">Laravel</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">PHP</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">JavaScript</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">Next.js</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">TypeScript</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">MySQL</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">Bootstrap</div>
+    <div className="bg-gray-800 text-white p-4 rounded-lg">Tailwind</div>
+  </div>
+</section>
 
       {/* ---------- PROYECTOS ---------- */}
       <section id="projects" className="max-w-6xl mx-auto py-24 px-6">
