@@ -36,14 +36,14 @@ export default async function Page({
           </div>
         </div>
       ) : (
-        <div className="relative w-full h-[500px] mb-16 rounded-xl overflow-hidden shadow-xl">
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-cover"
-          />
-        </div>
+     <div className="relative w-full aspect-video mb-16 rounded-xl overflow-hidden shadow-xl bg-neutral-100">
+  <Image
+    src={project.image}
+    alt={project.title}
+    fill
+    className="object-contain"
+  />
+</div>
       )}
 
       <section className="max-w-3xl">

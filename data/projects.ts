@@ -49,7 +49,6 @@ Incluye:
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
     tags: ["Sistema gubernamental", "Web App", "Laravel"],
     image: "/projects/nachec/cover.png",
-    //codeUrl: "https://github.com/LucasVillaboa/nachec.sistema",
     device: "mobile",
   },
 
@@ -61,9 +60,9 @@ Incluye:
 Sistema web para la gestión integral de un restaurante.
 
 Incluye:
-• Gestión de pedidos
-• Control de mesas
-• Administración de menú
+• Control de stock
+• Pérdidas y ganancias
+• Gestión de turnos del personal
 • Reportes diarios
 `,
     tech: ["Laravel", "PHP", "MySQL", "Bootstrap"],
@@ -72,6 +71,30 @@ Incluye:
     codeUrl: "https://github.com/LucasVillaboa/restaurante",
     device: "mobile",
   },
+
+  {
+  slug: "portfolio",
+  title: "Portfolio Personal",
+  shortDescription: "Portfolio profesional desarrollado con Next.js y TypeScript.",
+  longDescription: `
+Portfolio personal.
+
+Incluye:
+• Diseño responsive
+• Animaciones con Framer Motion
+• Sección de proyectos dinámica
+• Optimización de imágenes con Next.js
+• Arquitectura basada en componentes
+
+Stack principal:
+Next.js y TypeScript.
+`,
+  tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+  tags: ["Proyecto personal", "Frontend", "Portfolio"],
+  image: "/projects/portfolio/cover.png", 
+  codeUrl: "https://github.com/LucasVillaboa/portfolio",
+  device: "desktop",
+},
 ];
 
 

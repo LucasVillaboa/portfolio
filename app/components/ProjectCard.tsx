@@ -30,13 +30,16 @@ export default function ProjectCard({ project }: { project: Project }) {
           ) : (
             <div className="w-full">
               <div className="bg-neutral-900 rounded-t-xl p-[6px]">
-                <div className="bg-black rounded-md overflow-hidden aspect-[16/10] border border-neutral-700">
+                <div className="relative w-full aspect-video bg-neutral-100 rounded-md overflow-hidden border border-neutral-700">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    width={900}
-                    height={520}
-                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className={`${
+  project.slug === "spa-sentirse-bien"
+    ? "object-cover"
+    : "object-contain"
+} group-hover:scale-105 transition-transform duration-500`}
                   />
                 </div>
               </div>

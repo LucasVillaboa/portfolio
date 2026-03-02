@@ -7,8 +7,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-    className="relative pt-40 pb-32 flex items-center justify-center overflow-hidden"
-
+      className="relative pt-40 pb-32 flex items-center justify-center overflow-hidden"
     >
       {/* Fondo animado */}
       <motion.div
@@ -23,14 +22,18 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-            Hola, soy <span className="text-blue-600">Lucas Villaboa</span>
-          </h1>
+       <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-4 leading-tight">
+  Lucas Villaboa
+</h1>
 
-          <p className="text-xl text-gray-700 mb-8 max-w-xl">
-            Desarrollador Fullstack especializado en Laravel y PHP.
-            Actualmente incorporando Next.js y TypeScript para frontend moderno.
-          </p>
+<h2 className="text-2xl md:text-3xl font-semibold text-slate-700 mb-6">
+  Fullstack Developer
+</h2>
+
+<p className="text-lg text-gray-600 mb-8 max-w-xl">
+  Desarrollador Fullstack especializado en PHP y Laravel.
+  Experiencia en Next.js y TypeScript para desarrollo frontend.
+</p>
 
           <div className="flex gap-5">
             <Link
@@ -54,18 +57,17 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.2 }}
           className="flex justify-center"
         >
-<div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
-  <Image
-    src="/profile.jpg"
-    alt="Lucas Villaboa"
-    fill
-    priority
-    className="object-cover"
-  />
-</div>
+          <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+            <Image
+              src="/profile.jpg"
+              alt="Lucas Villaboa"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
         </motion.div>
       </div>
-
     </section>
   );
 }
