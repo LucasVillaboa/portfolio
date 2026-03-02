@@ -19,7 +19,7 @@ export default function Home() {
       >
         <h2 className="text-3xl font-bold mb-10">Tecnologías</h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-300">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-slate-900">
           <div className="bg-gray-800 p-4 rounded-lg">Laravel</div>
           <div className="bg-gray-800 p-4 rounded-lg">PHP</div>
           <div className="bg-gray-800 p-4 rounded-lg">JavaScript</div>
