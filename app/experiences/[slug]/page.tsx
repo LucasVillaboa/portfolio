@@ -9,7 +9,7 @@ export default async function Page({
 }) {
   const { slug } = await params;
 
-  const project = projects.find(p => p.slug === slug);
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return notFound();
 
   return (
@@ -36,37 +36,85 @@ export default async function Page({
           </div>
         </div>
       ) : (
-     <div className="relative w-full aspect-video mb-16 rounded-xl overflow-hidden shadow-xl bg-neutral-100">
-  <Image
-    src={project.image}
-    alt={project.title}
-    fill
-    className="object-contain"
-  />
-</div>
+        <div className="relative w-full aspect-video mb-16 rounded-xl overflow-hidden shadow-xl bg-neutral-100">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-contain"
+          />
+        </div>
       )}
 
       <section className="max-w-3xl">
+
         <p className="text-gray-700 leading-relaxed whitespace-pre-line mb-10">
           {project.longDescription}
         </p>
 
-       {project.codeUrl && (
-  <a
-    href={project.codeUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block px-6 py-3 rounded-lg bg-black text-white hover:bg-gray-800 transition"
-  >
-    Ver código
-  </a>
-)}
+        {/* ENLACES */}
+        <div className="flex flex-wrap gap-4">
+
+          {project.slug === "reservas-multirubro" && (
+            <>
+              <a
+                href="https://med-turnos.vercel.app/demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+              >
+                🩺 Consultorio Médico
+              </a>
+
+              <a
+                href="https://med-turnos.vercel.app/lavadero"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+              >
+                🚗 Lavadero
+              </a>
+
+              <a
+                href="https://med-turnos.vercel.app/futbol5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+              >
+                ⚽ Fútbol 5
+              </a>
+            </>
+          )}
+
+          {project.slug === "mapa-merenderos" && project.demoUrl && (
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition"
+            >
+              🗺️ Ver aplicación
+            </a>
+          )}
+
+          {project.codeUrl && (
+            <a
+              href={project.codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-lg bg-black text-white hover:bg-gray-800 transition"
+            >
+              Ver código
+            </a>
+          )}
+
+        </div>
+
       </section>
 
     </main>
   );
 }
-
 
 
 

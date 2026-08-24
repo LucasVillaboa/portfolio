@@ -10,7 +10,7 @@ export default function ExperiencesPage() {
         {projects.map(project => (
           <li key={project.slug}>
             <Link
-              href={`/experiences/${project.slug}`} // 👈 aquí apunta al slug correcto
+              href={`/experiences/${project.slug}`} 
               className="text-blue-600 underline"
             >
               {project.title}
