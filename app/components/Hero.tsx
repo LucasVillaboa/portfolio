@@ -31,8 +31,8 @@ export default function Hero() {
 </h2>
 
 <p className="text-lg text-gray-600 mb-8 max-w-xl">
-  Desarrollador Fullstack especializado en PHP y Laravel.
-  Experiencia en Next.js y TypeScript para desarrollo frontend.
+Desarrollador Fullstack con experiencia en Next.js y TypeScript.
+Desarrollo backend con PHP y Laravel.
 </p>
 
           <div className="flex gap-5">
